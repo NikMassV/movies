@@ -1,0 +1,10 @@
+version: '3.9'
+services:
+  mongodb:
+    image: mongo
+    environment:
+      MONGO_INITDB_DATABASE: movies-api-db
+    volumes:
+      - ./data/db:/data/db
+    ports:
+      - 27017:27017

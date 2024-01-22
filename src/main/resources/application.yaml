@@ -1,0 +1,11 @@
+
+spring:
+  data:
+    mongodb:
+      database: ${env.MONGO_DATABASE}
+      uri: mongodb://localhost:27017/${env.MONGO_DATABASE}
+#spring:
+#  data:
+#    mongodb:
+#      database: ${env.MONGO_DATABASE}
+#      uri: mongodb://${env.MONGO_USER}:${env.MONGO_PASSWORD}@mongo:27017/${env.MONGO_DATABASE}

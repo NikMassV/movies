@@ -3,8 +3,8 @@ services:
   mongodb:
     image: mongo
     environment:
-      MONGO_INITDB_DATABASE: movies-api-db
+      MONGO_INITDB_DATABASE: movies-api-db1
     volumes:
-      - ./data/db:/data/db
+      - ./data/db:/data/db1
     ports:
       - 27017:27017
